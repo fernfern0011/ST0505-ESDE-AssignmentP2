@@ -6,7 +6,7 @@ if ($registerFormContainer.length != 0) {
     //to server-side api when the #submitButton element fires the click event.
     $('#submitButton').on('click', function(event) {
         event.preventDefault();
-        const baseUrl = 'https://localhost:5000';
+        const baseUrl = 'ec2-54-91-181-143.compute-1.amazonaws.com';
         let fullName = $('#fullNameInput').val();
         let email = $('#emailInput').val();
         let password = $('#passwordInput').val();

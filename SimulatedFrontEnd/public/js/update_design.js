@@ -6,7 +6,7 @@ if ($updateDesignFormContainer.length != 0) {
     //to server-side api when the #submitButton element fires the click event.
     $('#submitButton').on('click', function (event) {
         event.preventDefault();
-        const baseUrl = 'https://localhost:5000';
+        const baseUrl = 'ec2-54-91-181-143.compute-1.amazonaws.com';
         //Collect fileId value from the input element, fileIdInput (hidden input element)
         let fileId = $('#fileIdInput').val();
         //Obtain user id from local storage
@@ -56,7 +56,7 @@ if ($updateDesignFormContainer.length != 0) {
     });
 
     function getOneData() {
-        const baseUrl = 'https://localhost:5000';
+        const baseUrl = 'ec2-54-91-181-143.compute-1.amazonaws.com';
         //Get the fileId information from the web browser URL textbox
         let query = window.location.search.substring(1);
         let arrayData = query.split("=");

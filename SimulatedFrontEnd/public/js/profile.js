@@ -8,7 +8,7 @@ if ($profileContainer.length != 0) {
 
     function getOneUser() {
 
-        const baseUrl = 'https://localhost:5000';
+        const baseUrl = 'ec2-54-91-181-143.compute-1.amazonaws.com';
 
         let userId = localStorage.getItem('user_id');
         axios({
